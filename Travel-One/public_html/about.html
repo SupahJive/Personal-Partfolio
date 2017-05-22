@@ -6,11 +6,111 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Travel-One: Your One-Stop Travel Website</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/maincss.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/about.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/icons/typicons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/jquery.fullPage.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="perspective" class="perspective effect-moveleft">
+            <div class="cool-container">
+                
+                <div class="wrapper"> <!-- wrapper needed for scroll -->
+                    <header id="fixed-header">
+                        <nav class="container-group" id="myMenu">
+                            <figure class="floatLeft" id="about-logo">
+                                <a href="index.html"><img src="CSS/images/logo.png" alt="Travel-One" class="logo"/></a>
+                            </figure>
+                            <div data-menuanchor="Intro"><a href="#Intro">Intro</a></div>
+                            <div data-menuanchor="Fly"><a href="#Fly">Fly</a></div>
+                            <div data-menuanchor="Visit"><a href="#Visit">Visit</a></div>
+                            <div data-menuanchor="Experience"><a href="#Experience">Experience</a></div>
+                            <div data-menuanchor="Leap"><a href="#Leap">Leap</a></div>
+                            <div class="floatRight typcn typcn-th-menu" style="color: orangered" id="showMenu"></div>
+                        </nav>
+                        <div class="fullpage-wrapper" id="fullpage">
+                            
+                            <section class="section fp-section vertical-scrolling video-slide" data-anchor="Intro">
+                                <div class="video-container">
+                                    <video muted loop data-autoplay>
+                                        <source src="CSS/videos/695990749.mp4" type="video/mp4">
+                                        Your browser does not support the <code>video</code> tag.
+                                    </video>
+                                </div>                            
+                            </section>
+
+                            <section class="section fp-section vertical-scrolling" data-anchor="Fly">
+                                <div class="video-container">
+                                    <video muted loop data-autoplay>
+                                        <source src="CSS/videos/721875757.mp4" type="video/mp4">
+                                        Your browser does not support the <code>video</code> tag.
+                                    </video>
+                                </div>
+                            </section>
+
+                            <section class="section fp-section vertical-scrolling" data-anchor="Visit">
+                                <div class="video-container">
+                                    <video muted loop data-autoplay>
+                                        <source src="CSS/videos/Eiffel Tower - 8133.mp4" type="video/mp4">
+                                        Your browser does not support the <code>video</code> tag.
+                                    </video>
+                                </div>
+                            </section>
+
+                            <section class="section fp-section vertical-scrolling" data-anchor="Experience">
+                                <div class="video-container">
+                                    <video muted loop data-autoplay>
+                                        <source src="CSS/videos/563399883.mp4" type="video/mp4">
+                                        Your browser does not support the <code>video</code> tag.
+                                    </video>
+
+                                </div>
+                            </section>
+
+                            <section class="section fp-section vertical-scrolling" data-anchor="Leap">
+                                <div class="video-container">
+                                    <video muted loop data-autoplay>
+                                        <source src="CSS/videos/Beach - 7268.mp4" type="video/mp4">
+                                        Your browser does not support the <code>video</code> tag.
+                                    </video>
+                                    <div class="video-mask"></div>
+                                    <section class="banner-content">
+
+                                    </section>
+                                </div>
+                            </section>
+
+                        </div> <!-- end of fullpage scroll -->
+
+                </div><!-- end of "wrapper" div -->
+                    
+            </div> <!-- end of cool-container div -->
+            <nav class="outer-nav right vertical">
+                <a href="index.html" class="typcn typcn-home">Home</a>
+                <a href="blog.html" class="typcn typcn-news">Our Blog</a>
+                <a href="gallery.html" class="typcn typcn-camera">Gallery</a>
+                <a href="travel.html" class="typcn typcn-calendar">Plan Your Trip!</a>
+                <a href="about.html" class="typcn typcn-info">About Us</a>
+                <a href="contact.html" class="typcn typcn-mail">Contact Us</a>
+            </nav>
+        </div> <!-- end of perspective div -->
+
+
+        <script src="JS/modernizr.custom.25376.js" type="text/javascript"></script>
+        <script src="JS/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script src="JS/menu.js" type="text/javascript"></script>
+        <script src="JS/jquery.fullPage.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // fullpage slider
+                $('#fullpage').fullpage({
+                    anchors: ['Intro','Fly','Visit','Experience','Leap'],
+                    menu: '#myMenu'
+                });
+            });
+        </script>
     </body>
 </html>
