@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>public_html/about.html</url>
+            <bookmark id="1">
+                <name/>
+                <line>12</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/ereko/Desktop/Websites/Travel-One/public_html/CSS/jquery.fullPage.css</file>
             <file>file:/C:/Users/ereko/Desktop/Websites/Travel-One/public_html/CSS/maincss.css</file>
             <file>file:/C:/Users/ereko/Desktop/Websites/Travel-One/public_html/index.html</file>
+            <file>file:/C:/Users/ereko/Desktop/Websites/Travel-One/public_html/about.html</file>
             <file>file:/C:/Users/ereko/Desktop/Websites/Travel-One/public_html/JS/fancyStuff.js</file>
-            <file>file:/C:/Users/ereko/Desktop/Websites/Travel-One/public_html/gallery.html</file>
-            <file>file:/C:/Users/ereko/Desktop/Websites/Travel-One/public_html/CSS/gallery.css</file>
+            <file>file:/C:/Users/ereko/Desktop/Websites/Travel-One/public_html/CSS/about.css</file>
         </group>
     </open-files>
 </project-private>
