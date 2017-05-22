@@ -166,7 +166,7 @@ h1 {
     font-size: 2.5em;
 }
 figcaption {
-    font-family: "TitilliumWeb-BoldItalic";
+    font-family: "TitilliumWeb-BoldItalic", arial, sans-serif;
     color: orangered;
     font-size: 150%;
 }
