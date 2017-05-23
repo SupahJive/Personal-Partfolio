@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+    
+    
+    //polaroid stuff
+    //
     // When everything has loaded, place all polaroids on a random position	
     $(".polaroid").each(function (i) {
             var tempVal = Math.round(Math.random());
