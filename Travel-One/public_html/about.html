@@ -76,9 +76,11 @@ and open the template in the editor.
                                         <source src="CSS/videos/Beach - 7268.mp4" type="video/mp4">
                                         Your browser does not support the <code>video</code> tag.
                                     </video>
-                                    <div class="video-mask"></div>
-                                    <section class="banner-content">
-
+                                    <section class="section-content">
+                                        <h1>What are you waiting for?</h1>
+                                        <div class="action">
+                                            <a href="travel.html"><h3 class="hover">GO EXPLORE!!!</h3></a>
+                                        </div>
                                     </section>
                                 </div>
                             </section>
@@ -105,14 +107,55 @@ and open the template in the editor.
         <script src="JS/jquery.fullPage.min.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-                // fullpage slider
-                $('#fullpage').fullpage({
-                    anchors: ['Intro','Fly','Visit','Experience','Leap'],
-                    menu: '#myMenu',
-                    loopBottom: 'true',
-                    loopTop: 'true'
-                });
+                    //about us slider stuff
+    //
+    // fullpage slider
+    $('#fullpage').fullpage({
+        anchors: ['Intro','Fly','Visit','Experience','Leap'],
+        menu: '#myMenu',
+        loopBottom: 'true',
+        loopTop: 'true',
+        afterLoad: function(anchorLink, index){
+            //apply the appropriate animations after a section
+            //has loaded
+            switch(index){
+                case 1:
+                    //alert('1');
+                break;
+                case 2:
+                   // alert('2');
+                break;
+                case 3:
+                break;
+                case 4:
+                break;
+                case 5:
+                    $('.section-content').slideDown(500);
+                break;
+            }
+                    
+        },
+        onLeave: function(index, nextIndex, direction){
+            //reset the animation after the user leaves
+            //the section
+            switch(index){
+                case 1:
+                break;
+                case 2:
+                break;
+                case 3:
+                break;
+                case 4:
+                break;
+                case 5:
+                    $('.section-content').slideUp(500);
+                break;
+            }
+        }
+    });
+
             });
         </script>
+      
     </body>
 </html>
