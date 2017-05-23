@@ -33,6 +33,8 @@ nav.container-group a{
     font-size: 3em;
     text-align: center;
     color: white;
+    line-height: 10vh;
+    
 }
 div.active a{
     background: rgba(255,255,255, 0.5);
