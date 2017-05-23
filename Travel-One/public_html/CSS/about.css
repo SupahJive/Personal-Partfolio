@@ -51,16 +51,59 @@ div.active a{
     text-align: right;
 }
 
+
+/*******************************
+*
+*   ANIMATED SLIDE CONTENT
+*
+*******************************/
+.section {
+    position: relative;
+    overflow: hidden;
+}
+.section-content{
+    position: absolute;
+    top: 15vh;
+    left: 30vh;
+    width: 70%;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5%;
+}
+.section-content h1 {
+    color: orangered;
+    font-size: 5em;
+    margin: 0 auto;
+    text-align: center;
+}
+.action {
+    text-align: center;
+    margin: 20vh auto;
+    width: 40%;
+    height: 30vh;
+    border: 5px solid white;
+    border-radius:  7%;
+    line-height: 30vh;
+    font-size: 4em;
+    text-decoration: none;
+    transition: all linear .25s;
+    color: red;
+}
+.action:hover {
+    background: white;
+}
+.hover:hover {
+    color: red;
+}
+.action a {
+    text-decoration: none;
+}
+
 /*******************************
 *
 * RESPONSIVE BACKGROUND IMAGES
 *
 *******************************/
-section.video-slide {
-    position: relative;
-    overflow: hidden;
-    
-}
+
 .video-container {
     position: absolute;
     top: 0;
@@ -79,6 +122,7 @@ section.video-slide {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 100%;
+    min-height: 0%;
     min-width: 100%;
+    background: rgba(0,0,0,0.5);
 }
