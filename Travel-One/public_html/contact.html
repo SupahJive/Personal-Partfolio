@@ -6,11 +6,64 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Travel-One: Your One-Stop Travel Website</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/maincss.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/contact.css" rel="stylesheet" type="text/css"/>
+        <link href="CSS/icons/typicons.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="perspective" class="perspective effect-moveleft">
+            <div class="cool-container">
+                
+                <div class="wrapper"> <!-- wrapper needed for scroll -->
+                    <div class="home container-group">
+                        
+                        <header class="container-group col-12">
+                            <!-- the logo -->
+                            <figure class=" floatLeft col-4">
+                                <a href="index.html"><img src="CSS/images/logo.png" alt="Travel-One" class="logo"/></a>
+                            </figure>
+                            <!-- the tagline -->
+                            <div class="floatLeft"><h1>Contact Us!</h1></div>
+                            <!-- Menu Button -->
+                            <div class="floatRight typcn typcn-th-menu" id="showMenu"></div>
+                        </header>
+                        
+                        <!-- main content -->
+                        <section class="main-content container-flex">
+                            <div id="contact-area">
+                                <form method="post" action="contactengine.php">
+                                    <label for="Name">Name:</label>
+                                    <input type="text" name="Name" id="Name" />
+
+                                    <label for="Email">Email:</label>
+                                    <input type="text" name="Email" id="Email" />
+
+                                    <label for="Message">Message:</label><br />
+                                    <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+                                    <input type="submit" name="submit" value="Submit" class="submit-button" />
+                                </form>
+                            </div>
+                        </section><!-- end of main content div -->
+                        
+                    </div> <!-- end of container-flex div -->
+                </div> <!-- end of "wrapper" div -->
+                    
+            </div> <!-- end of cool-container div -->
+            <nav class="outer-nav right vertical">
+                <a href="index.html" class="typcn typcn-home">Home</a>
+                <a href="blog.html" class="typcn typcn-news">Our Blog</a>
+                <a href="gallery.html" class="typcn typcn-camera">Gallery</a>
+                <a href="travel.html" class="typcn typcn-calendar">Plan Your Trip!</a>
+                <a href="about.html" class="typcn typcn-info">About Us</a>
+                <a href="contact.html" class="typcn typcn-mail">Contact Us</a>
+            </nav>
+        </div> <!-- end of perspective div -->
+        <script src="JS/modernizr.custom.25376.js" type="text/javascript"></script>
+        <script src="JS/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script src="JS/menu.js" type="text/javascript"></script>
     </body>
 </html>
