@@ -1,0 +1,139 @@
+/* 
+    Created on : May 23, 2017, 4:41:15 PM
+    Author     : ereko
+*/
+/****************************************
+*
+*           CSS     RESET
+*
+****************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/***********************************
+*
+*              GRID
+*
+***********************************/
+/* flex container */
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: no-display;
+    clear: both;
+}
+/**********************************
+* Clear Fix Hack
+**********************************/
+.container-group:before,
+.container-group:after {
+    content: "";
+    display: table;
+}
+.container-group:after {
+    clear: both;
+}
+.container-group {
+    clear: both;
+    *zoom: 1;
+}
+/**********************************
+*       Floats
+**********************************/
+.floatRight {
+    float: right;
+}
+.floatLeft {
+    float: left;
+}
+/**********************************
+* Columns
+**********************************/
+.col-1 {width:8.33%;}
+.col-2 {width:16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/**********************************
+*
+*       Parallax Scrolling
+*
+**********************************/
+.parallax {
+    z-index: 1;
+    /* "landing page" background */
+    background-image: url("images/pexels-photo-370799.jpeg");
+    /* take up height of viewport */
+    height: 100vh;
+    
+    /* scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* position content within */
+    position: relative;
+}
+
+.mainSection {
+    background-image: url("images/bokeh-blur-blue-white-158658.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index: 3;
+    height: 100vh;
+}
