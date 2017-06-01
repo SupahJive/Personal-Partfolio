@@ -111,29 +111,20 @@ table {
 *       Parallax Scrolling
 *
 **********************************/
-.parallax {
-    z-index: 1;
-    /* "landing page" background */
-    background-image: url("images/pexels-photo-370799.jpeg");
-    /* take up height of viewport */
-    height: 100vh;
-    
-    /* scrolling effect */
-    background-attachment: fixed;
+section {
+    overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    /* position content within */
-    position: relative;
+    height: 100vh;
+}
+.parallax {
+    /* "landing page" background */
+    background-image: url("images/pexels-photo-370799.jpeg");   
+    /* scrolling effect */
+    background-attachment: fixed;
 }
 
 .mainSection {
     background-image: url("images/bokeh-blur-blue-white-158658.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    z-index: 3;
-    height: 100vh;
 }
