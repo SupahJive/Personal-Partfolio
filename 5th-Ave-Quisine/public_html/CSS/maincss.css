@@ -106,6 +106,25 @@ table {
 .col-12 {width: 100%;}
 
 
+/*********************************
+        Fonts & Icons
+*********************************/
+/* Text Fonts */
+@font-face {
+    font-family: "Oswald-Regular";
+    src: url("fonts/Oswald-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Segoe-Light-Italic";
+    src: url("fonts/seguili.ttf") format("truetype");
+}
+
+h1 {
+    color: dodgerblue;
+    font-family: "Oswald-Regular";
+}
+
+
 /**********************************
 *
 *       Parallax Scrolling
@@ -127,4 +146,30 @@ section {
 
 .mainSection {
     background-image: url("images/bokeh-blur-blue-white-158658.jpeg");
+}
+
+/**********************************
+*
+*        General Styling 
+*
+**********************************/
+/* landing page */
+figure .plate {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    transform: translate(33%,15%);
+}
+.landingTitle {
+    text-align: center;
+    font-size: 3em;
+    margin: auto;
+}
+.circle {
+    width: 30vw;
+    height: 30vw;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 700px;
+    margin: auto;
+    transform: translate(0, 30%);
 }
