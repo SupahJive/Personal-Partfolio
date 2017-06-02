@@ -197,7 +197,7 @@ span.enter {
 }
 
 /*****************************************
-*                Nav
+*             Nav & Header
 *****************************************/
 nav {
     width: 100vw;
@@ -222,13 +222,20 @@ nav {
     color: aqua;
     background-color: rgba(255,255,255,0.2);
 }
-/*nav div a {
-    color: whitesmoke;
-    transition: all .5s ease-in-out;
+
+/* title and plate */
+.homeTitle {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5em;
+    margin-top: -5vh;
 }
-nav div:hover {
-    background-color: rgba(255,255,255, 0.3);
+header figure {
+    width: 15vw;
+    height: auto;
+    margin: 0 auto;
 }
-nav div a:hover {
-    color: aqua;
-}*/
+.homeFigure img {
+    width: 100%;
+    height: auto;  
+}
