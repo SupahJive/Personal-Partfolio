@@ -5,7 +5,15 @@ $(document).ready(function(){
         //by offsetting the content by the same value as scrollTop we can
         //create the illusion that the text is scrolling with its container
         $('.parallax div').each(function(){
-            $(this).css('margin-top', $(window).scrollTop()-$(this).parent().position().top);
+            $(this).css('margin-top', $(window).scrollTop() - $(this).parent().position().top);
         });
+        
+        //scroll down when the arrows are clicked
+       /* $('.next').click(function(){
+            
+            $('html, body').animate({
+               scrollTop: $('.mainSection').offset().top 
+            });
+        }); */
     });
 });
